@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Job Tracker</title>
+</head>
+<body>
+<h1>Job Application Tracker</h1>
+<p>Add your jobs here</p>
+<input id="company" placeholder="Company">
+<input id="role" placeholder="Role">
+<button onclick="add()">Add Job</button>
+<ul id="list"></ul>
+<script>
+function add(){
+let c=document.getElementById("company").value;
+let r=document.getElementById("role").value;
+let li=document.createElement("li");
+li.textContent=c+" - "+r;
+document.getElementById("list").appendChild(li);
+}
+</script>
+</body>
+</html>
